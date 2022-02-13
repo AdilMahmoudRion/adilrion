@@ -1,0 +1,48 @@
+.About-part {
+  margin: 4% 6%;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Poppins", sans-serif;
+}
+.about-part-img {
+  width: 100%;
+  padding: 4%;
+}
+.about-sec-title {
+  padding: 4%;
+}
+.about-sec-title h1,
+h2,
+p {
+  margin: 0;
+}
+.about-sec-title h4 {
+  margin-bottom: 0px;
+}
+.edu-history {
+  display: flex;
+  padding: 2% 0px;
+  align-items: center;
+}
+.course {
+  width: 100%;
+}
+.edu-history h2 {
+  width: 120px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0e6cca;
+}
+.text-color {
+  color: #c5c5c5;
+}
+.title {
+  font-weight: 700;
+  color: #0e6cca;
+}
+@media only screen and (max-width: 600px) {
+  .About-part {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

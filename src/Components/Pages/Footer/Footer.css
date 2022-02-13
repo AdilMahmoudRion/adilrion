@@ -1,0 +1,12 @@
+.footer-section {
+  min-height: 70px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ftaxt {
+  color: gray;
+  text-align: center;
+}

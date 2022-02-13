@@ -1,0 +1,112 @@
+.projectCard {
+  padding: 4% 4%;
+}
+.serviceHeader {
+  margin-top: 3%;
+  margin-bottom: 4%;
+  text-align: center;
+}
+.serviceHeader p {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: #0e6cca;
+}
+.serviceHeader h1 {
+  color: white;
+  margin-top: 0;
+}
+.cardBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  font-family: "Carme", sans-serif;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  /* background-image: url("../../Images/HondaCBR-project.png"); */
+  /* min-height: 100vh; */
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: 0.2s ease-in;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.content span {
+  font-size: 1.3rem;
+  color: #c5c5c5;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.caption > * {
+  padding: 0.9rem 1rem;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 5px 6px 2px rgba(0, 0, 0, 0.1);
+}
+.box img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.box2 .caption {
+  color: #fff;
+}
+
+@keyframes borderAnim {
+  0% {
+    border-color: #a85632 !important;
+  }
+  10% {
+    border-color: #a85632 !important;
+  }
+  20% {
+    border-color: #fc5105 !important;
+  }
+  30% {
+    border-color: #82f75c !important;
+  }
+  40% {
+    border-color: #5ac6cc !important;
+  }
+  50% {
+    border-color: #366eb3 !important;
+  }
+  70% {
+    border-color: #4b2566 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardBody {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

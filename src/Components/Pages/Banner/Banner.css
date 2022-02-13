@@ -1,0 +1,84 @@
+.banner-section {
+  background-color: #222222;
+  margin: 4% 12%;
+  padding: 4% 10%;
+  border-radius: 40px;
+}
+.banner-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4% 4%;
+}
+.banner-img-section {
+  display: flex;
+  justify-content: center;
+}
+.banner-img {
+  height: 320px;
+  width: 320px;
+
+  border-radius: 100%;
+  border: 20px solid #444444;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.4);
+}
+.banner-information {
+  padding: 2%;
+}
+.btn {
+  font-weight: 600;
+  background-color: #444444;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 177px;
+}
+.banner-btn1 {
+  font-weight: 600;
+  border: 2px solid #0e6cca;
+}
+.banner-btn1:hover {
+  background-color: #0e6cca;
+}
+.banner-btn2 {
+  border: 2px solid #bebbbb;
+}
+.banner-btn2:hover {
+  background-color: #bebbbb;
+  /* color: #c5c5c5; */
+}
+.banner-information h1 {
+  font-size: 48px;
+  margin: 0;
+  color: white;
+}
+.banner-information p {
+  color: #c5c5c5;
+}
+.banner-skill-details {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+.d-link {
+  text-decoration: none;
+  color: white;
+}
+/* ............. */
+@media only screen and (max-width: 600px) {
+  .banner-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 4% 4%;
+  }
+  .banner-img {
+    height: 35vh;
+    width: 100%;
+  }
+}
