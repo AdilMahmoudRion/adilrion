@@ -1,29 +1,30 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import "./Banner.css";
+import adil from "../../Images/adil.png";
 
 const Banner = () => {
   return (
     <div className="banner-section">
       <div className="banner-item">
         <div className="banner-img-section">
-          <img
-            className="banner-img"
-            src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg"
-            alt=""
-            srcset=""
-          />
+          <img className="banner-img" src={adil} alt="" srcset="" />
         </div>
         <div className="banner-information">
-          <p className="banner-skill">Web Developer</p>
-          <h1>Adil M Rion</h1>
-          <p className="banner-skill-details">
-            Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-            convallis, risus non condimentum gravida, odio mauris ullamcorper
-            felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
-            a placerat sapien pretium eu.
+          <p className="md:text-5xl lg:text-6xl uppercase font-bold text-white">
+            Adil M Rion
           </p>
-          <div>
+          <p className="banner-skill divide-y border-b-2 border-[#0e6cca]">
+            MERN Stack Developer || JavaScript Developer
+          </p>
+          <p className="banner-skill-details mt-2 text-md">
+            I actively seek out new technologies and stay up-to-date on industry
+            trends and advancements. Building state-of-the-art, easy-to-use,
+            user- friendly websites and applications is truly a passion of mine.
+            my strengths are my analytical approach, I believe in being
+            realistic.
+          </p>
+          <div className="flex flex-wrap justify-around">
             <button className="banner-btn1 btn">
               <a
                 className="d-link"
