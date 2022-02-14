@@ -44,7 +44,7 @@ p {
   color: #0e6cca;
 }
 @media only screen and (max-width: 600px) {
-  .About-part {
-    grid-template-columns: repeat(1, 1fr);
+  .about-part {
+    grid-template-columns: 1fr;
   }
 }

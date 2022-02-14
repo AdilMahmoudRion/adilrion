@@ -1,7 +1,7 @@
 .contact-from {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2% 6%;
+  grid-column-gap: 5%;
 }
 
 .contact-from h1 {
@@ -14,15 +14,6 @@
 }
 .contact-from p {
   color: #c5c5c5;
-}
-.contact-from strong {
-  color: #0e6cca;
-}
-.header {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 0px;
-  color: #0e6cca;
 }
 .contact-from span {
   width: 20px;
@@ -39,13 +30,9 @@
 .icon {
   width: 25px;
 }
-.add-info {
-  padding: 0 15%;
-}
+
 /* from  */
-.form-section {
-  width: 80%;
-}
+
 .form {
   display: flex;
   flex-direction: column;

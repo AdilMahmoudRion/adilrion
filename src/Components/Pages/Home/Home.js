@@ -1,11 +1,12 @@
 import React from "react";
 import About from "../About/About";
-import Blog from "../Blog/Blog";
+
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Projects from "../Projects/Projects";
 import Service from "../Service/Service";
 import Banner from "../Banner/Banner";
+import Blog from "../Blog/Blog";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <Service></Service>
       <Projects></Projects>
       <Contact></Contact>
-      <Blog></Blog>
+      {/* <Blog></Blog> */}
       <Footer></Footer>
     </div>
   );

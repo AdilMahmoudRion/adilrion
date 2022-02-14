@@ -77,4 +77,9 @@
     height: 35vh;
     width: 100%;
   }
+  .banner-section {
+    margin: 4% 3%;
+    padding: 4% 10%;
+    border-radius: 40px;
+  }
 }
