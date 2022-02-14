@@ -5,21 +5,26 @@ import fb from "../../Images/fb.png";
 import tw from "../../Images/twitter.png";
 import insta from "../../Images/insta.png";
 import git from "../../Images/git.png";
+import { Zoom } from "react-reveal";
 
 const Footer = () => {
   return (
     <div>
       <div className="mt-24">
         <div class="p-4 w-full text-center bg-white border shadow-md sm:p-8 bg-[#131f33] dark:border-gray-700">
-          <h3 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-            Move With{" "}
-            <strong className="text-[#0e6cca]">Adil Mahmoud Rion</strong>
-          </h3>
-          <p class="mb-2 text-base text-gray-500 sm:text-lg dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br /> Neque, possimus. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Modi, odio.
-          </p>
+          <Zoom>
+            <>
+              <h3 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+                Move With{" "}
+                <strong className="text-[#0e6cca]">Adil Mahmoud Rion</strong>
+              </h3>
+              <p class="mb-2 text-base text-gray-500 sm:text-lg dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br /> Neque, possimus. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Modi, odio.
+              </p>
+            </>
+          </Zoom>
           <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <Link
               to="/"

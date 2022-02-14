@@ -8,6 +8,7 @@ import Projects from "./Components/Pages/Projects/Projects";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
 import Blog from "./Components/Pages/Blog/Blog";
+import MoreProject from "./Components/Pages/MoreProject/MoreProject";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="home#blog" element={<Blog />} />
+          <Route path="project/more-project" element={<MoreProject />} />
         </Routes>
       </BrowserRouter>
     </div>
