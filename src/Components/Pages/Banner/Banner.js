@@ -15,7 +15,7 @@ const Banner = () => {
             Adil M Rion
           </p>
           <p className="banner-skill divide-y border-b-2 border-[#0e6cca]">
-            MERN Stack Developer || JavaScript Developer
+            Junior Web Developer || MERN Stack Developer
           </p>
           <p className="banner-skill-details mt-2 text-md">
             I actively seek out new technologies and stay up-to-date on industry

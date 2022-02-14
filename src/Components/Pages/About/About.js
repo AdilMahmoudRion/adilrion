@@ -21,12 +21,12 @@ const About = () => {
             trends and advancements. This has allowed me to stay ahead of the
             curve and deliver exceptional work to all of my employers,
           </p>
-          <h4>EDUCATION:</h4>
+
           <div>
             <div className="edu-history">
               <h2 className="divide-y border-b-2 border-[#0e6cca]">SKILLS</h2>
               <div className="course">
-                <p className="text-color">
+                <p className="text-color capitalize ">
                   HTML4/5, CSS, JavaScript, Java, ES6, React.js, Express.js,
                   MongoDB Material UI, Bootstrap, tailwind CSS, firebase
                 </p>
@@ -36,7 +36,7 @@ const About = () => {
             <div className="edu-history">
               <h2 className="divide-y border-b-2 border-[#0e6cca]">TOOLS</h2>
               <div className="course">
-                <p className="text-color">
+                <p className="text-color capitalize ">
                   Git, GitHub, Firebase, VS Code, Android Studio, Chrome
                   Dev-Tools
                 </p>
