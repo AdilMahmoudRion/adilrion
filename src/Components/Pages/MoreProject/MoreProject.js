@@ -7,6 +7,7 @@ import p5 from "../../Images/p5.png";
 import p6 from "../../Images/p6.png";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { Zoom } from "react-reveal";
 
 const project = [
   {
@@ -57,66 +58,70 @@ const MoreProject = () => {
   return (
     <>
       <div id="projects" className="">
-        <div className=" max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
-          <div className="serviceHeader text-center mb-8">
-            <p className="hed">PROJECT SHOWCASE</p>
-            <h1 className="text-4xl font-bold service-header">RECENT WORKS</h1>
-          </div>
-          <div className="relative">
-            <div className="cardBody">
-              {project.map((project) => (
-                <div class="card">
-                  <div className="card-images">
-                    <a
-                      target="_blank"
-                      href="https://booking-dotcom.web.app/home"
-                    >
-                      <img src={project.img} alt="" />
-                    </a>
-                  </div>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        {project.name}
-                      </h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      <a target="_blank" href={project.server}>
-                        Server-Site Code
-                      </a>{" "}
-                      ||{" "}
-                      <a target="_blank" href={project.client}>
-                        Client-Site Code
-                      </a>{" "}
-                      ||{" "}
-                      <a target="_blank" href={project.live}>
-                        Live Site
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              ))}
+        <Zoom cascade>
+          <div className=" max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
+            <div className="serviceHeader text-center mb-8">
+              <p className="hed">PROJECT SHOWCASE</p>
+              <h1 className="text-4xl font-bold service-header">
+                RECENT WORKS
+              </h1>
             </div>
-            <Link
-              to="/"
-              class="absolute right-2 +bottom-6 mt-3 text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
-            >
-              Back To Home
-              <svg
-                class="w-5 h-5 ml-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="relative">
+              <div className="cardBody">
+                {project.map((project) => (
+                  <div class="card">
+                    <div className="card-images">
+                      <a
+                        target="_blank"
+                        href="https://booking-dotcom.web.app/home"
+                      >
+                        <img src={project.img} alt="" />
+                      </a>
+                    </div>
+                    <div class="p-3 md:5">
+                      <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          {project.name}
+                        </h5>
+                      </a>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        <a target="_blank" href={project.server}>
+                          Server-Site Code
+                        </a>{" "}
+                        ||{" "}
+                        <a target="_blank" href={project.client}>
+                          Client-Site Code
+                        </a>{" "}
+                        ||{" "}
+                        <a target="_blank" href={project.live}>
+                          Live Site
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <Link
+                to="/"
+                class="absolute right-2 +bottom-6 mt-3 text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </Link>
+                Back To Home
+                <svg
+                  class="w-5 h-5 ml-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
           </div>
-        </div>
+        </Zoom>
       </div>
       <Footer></Footer>
     </>

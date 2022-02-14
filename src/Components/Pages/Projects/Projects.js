@@ -64,9 +64,9 @@ const Projects = () => {
           <h1 className="text-4xl font-bold service-header">RECENT WORKS</h1>
         </div>
         <div className="relative">
-          <div className="cardBody">
-            {project.map((project) => (
-              <Zoom>
+          <Zoom cascade>
+            <div className="cardBody">
+              {project.map((project) => (
                 <div class="card">
                   <div className="card-images">
                     <a
@@ -76,7 +76,7 @@ const Projects = () => {
                       <img src={project.img} alt="" />
                     </a>
                   </div>
-                  <div class="p-5">
+                  <div class="p-3 md:5">
                     <a href="#">
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {project.name}
@@ -97,9 +97,9 @@ const Projects = () => {
                     </p>
                   </div>
                 </div>
-              </Zoom>
-            ))}
-          </div>
+              ))}
+            </div>
+          </Zoom>
           <Link
             to="project/more-project"
             class="absolute right-2 +bottom-6 mt-3 text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
