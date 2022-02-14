@@ -1,29 +1,22 @@
-.serviceHeader p {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 0px;
-  color: #0e6cca;
-}
-.serviceHeader h1 {
-  color: white;
-  margin-top: 0;
-}
 .cardBody {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   font-family: "Carme", sans-serif;
 }
-
 .card {
-  height: 75vh;
+  background-color: rgba(175, 175, 175, 0.116);
+  height: 600px;
 }
-.card > a > img {
-  height: 65vh;
-  width: 100%;
-  overflow: hidden;
+.card-images {
+  height: 500px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
+.card-images::-webkit-scrollbar {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .cardBody {
     grid-template-columns: repeat(1, 1fr);

@@ -19,9 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="service" element={<Service />} />
-          <Route path="project" element={<Projects />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
+          <Route path="home#blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </div>
