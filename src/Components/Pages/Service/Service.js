@@ -3,9 +3,9 @@ import "./Service.css";
 const Service = () => {
   return (
     <div id="service">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-16 mb-28">
         <div className="service-header">
-          <p className="hed mt-7">WHAT WE DO</p>
+          <p className="hed ">WHAT WE DO</p>
           <h1 className="service-header text-4xl font-bold">
             SERVICES AND SOLUTIONS
           </h1>
